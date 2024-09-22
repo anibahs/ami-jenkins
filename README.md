@@ -79,34 +79,5 @@ The install-jenkins.sh script performs the following steps:
 - Initializing and running the Packer build process
 
 
-### Sync Git
-
-git stash
-git checkout main
-git pull upstream main
-git push origin main
 
 
-git checkout assignment7
-git pull origin main --rebase
-git push origin assignment7 -f
-git stash apply
-
-git add .
-git commit -m "feat: "
-git push origin assignment7
-
-###  Git clone
-git clone git@github.com:cyse7125-su24-team11/helm-cve-operator.git
-git clone git@github.com:cyse7125-su24-team11/cve-operator.git
-git clone git@github.com:cyse7125-su24-team11/helm-webapp-cve-processor.git
-git clone git@github.com:cyse7125-su24-team11/webapp-cve-processor.git
-git clone git@github.com:cyse7125-su24-team11/helm-webapp-cve-consumer.git
-git clone git@github.com:cyse7125-su24-team11/webapp-cve-consumer.git
-git clone git@github.com:cyse7125-su24-team11/ami-jenkins.git
-git clone git@github.com:cyse7125-su24-team11/infra-jenkins.git
-git clone git@github.com:cyse7125-su24-team11/infra-aws.git
-git clone git@github.com:cyse7125-su24-team11/static-site.git
-git clone git@github.com:cyse7125-su24-team11/k8s-yaml-manifests.git
-git clone git@github.com:cyse7125-su24-team11/helm-eks-autoscaler.git
-git clone git@github.com:cyse7125-su24-team11/ca-helm-registry.git
